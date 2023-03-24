@@ -1,0 +1,39 @@
+.bodys{
+    width: 100%;
+    height: 91%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 1px 1px 50px #c2c1c19f;
+}
+.impostazioni{
+    text-shadow: 2px 2px 4px #00000089;
+    font-family: 'Andika', sans-serif;
+    font-size: 20px;
+    letter-spacing: .5px !important;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+}
+ion-item{
+    margin: 20px;
+border-radius: 20px;
+}
+.footer{
+    font-family: 'Andika', sans-serif;
+
+    color: rgb(80, 80, 80);
+    text-align: center;
+    font-size: small;
+}
+.caricamento{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  text-align: center;
+  color: white;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,52 @@
+
+  <div class="login">
+    <div class="img--login">
+      <img src="../../../assets/logo.svg" alt="image--profile"/>
+    </div>
+    <div class="box--login">
+      <label class="l">Email  </label>
+      <input type="email" [(ngModel)]="email" placeholder="inserisci la tua email" />
+      <hr />
+      <label class="l">Password  </label>
+      <input type="password" [(ngModel)]="password"  placeholder="inserisci la tua password" />
+    </div>
+
+    <div class="action--login">
+      <button (click)="accedi()" class="button button-primary">Accedi</button>
+      <button (click)="setOpen(true)" class="button button-secendry">Registrati</button>
+    </div>
+  </div>
+
+  <ion-modal [isOpen]="register">
+    <ng-template>
+
+      <ion-content class="ion-padding">
+        <h1>Registrazione</h1>
+  
+        <ion-list>
+          <ion-item>
+            <ion-label>Nome:</ion-label>
+            <ion-input  [(ngModel)]="nomer" placeholder="inserisci il tuo nome completo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Email:</ion-label>
+            <ion-input [(ngModel)]="emailr" type="email" placeholder="inserisci la tua email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Telefono:</ion-label>
+            <ion-input [(ngModel)]="telefonor" type="tel" placeholder="inserisci il tuo numero di telefono"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Password:</ion-label>
+            <ion-input [(ngModel)]="passwordr" type="password" placeholder="inserisci una password"></ion-input>
+          </ion-item>
+   
+          </ion-list>
+         <div class="buttons">
+          <button  class="button button-primary" (click)="registrati()">Completa la Registrazione</button>
+          <br><br>
+          <button (click)="setOpen(false)" class="button button-secendry">Annulla</button>
+         </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>

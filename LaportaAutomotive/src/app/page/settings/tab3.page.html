@@ -1,0 +1,34 @@
+
+<span class="caricamento" *ngIf="online == false">
+  <img src="../../../assets/caricamento.gif" >
+  <h4>Caricamento...</h4>
+</span>
+<ion-content *ngIf="online"  [fullscreen]="true">
+  <p class="impostazioni">Impostazioni App</p>
+<div class="bodys " >
+  <ion-item onclick="document.getElementById('foto').click();" detail="true">
+      <input type="file" id="foto" class="form-control browse" accept="image/*" multiple style="display: none;" ngModel (change)="get($event)">
+  
+ 
+    <ion-label>
+      <h3>Foto Profilo</h3>
+      <p>Aggiungi/Modifica la tua foto profilo</p>
+    </ion-label>
+  </ion-item>
+ 
+  <ion-item (click)="logout()" detail="true">
+    <ion-label>
+      <h3>Logout</h3>
+      <p>Esegui il logout</p>
+    </ion-label>
+  </ion-item>
+  <ion-item (click)="eliminaccount()" detail="true">
+    <ion-label>
+      <h3>Elimina tutto</h3>
+      <p>Elimina tutti i tuoi dati</p>
+    </ion-label>
+  </ion-item>
+  <p class="footer">App v 1.0 Created by Laporta Cristian</p>
+</div>
+
+</ion-content>

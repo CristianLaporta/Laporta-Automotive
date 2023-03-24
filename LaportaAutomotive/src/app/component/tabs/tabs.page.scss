@@ -1,0 +1,40 @@
+
+
+ion-tab-bar{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+ min-width: 250px;
+ height: 45px;
+    align-self: center;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    color: white;
+ }
+
+.loi{
+   width: 40px;
+   height: 50px;
+}
+
+ .add{
+     background-color: rgb(241, 34, 34);
+     border-radius: 50%;
+ 
+ }
+ .logo{
+    width: 40px;
+    height: 50px;
+ }
+ .motor{
+   width: 22px !important;
+ }
+
+ion-card{
+   border-radius: 15px;
+
+}
+.img{
+   width: 100%;
+   object-fit: cover;
+}

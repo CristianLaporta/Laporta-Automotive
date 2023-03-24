@@ -1,0 +1,124 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Andika', sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.login {
+  padding: 25px;
+  width: 100%;
+}
+.img--login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  
+}
+
+.box--login {
+  background: rgb(52, 52, 52);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 4px 3px 16px 0px #b7b7b740;
+  padding: 25px 13px;
+  justify-content: center;
+}
+.box--login label {
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+.box--login input {
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  margin: 0.8rem 0;
+}
+.box--login hr {
+  border: 1px solid #525252;
+  margin: 0.5rem 0;
+}
+.action--login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.button {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 0.8rem 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.button-primary {
+  color: #fff;
+  background: #f46744;
+}
+.button-secendry {
+  background-color: #d1d0d0;
+  color: #d02929;
+}
+.action--login a {
+  color: #d11818;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-decoration: underline;
+  cursor: pointer;
+}
+input{
+    background-color: rgba(34, 34, 34, 0.271);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+label{
+    text-align: center;
+}
+.login{
+    
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+.l{
+    font-family: 'Andika', sans-serif;  
+}
+h1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.buttons{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+ion-list{
+    border-radius: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
